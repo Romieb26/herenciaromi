@@ -8,41 +8,26 @@ import javafx.scene.input.MouseEvent;
 
 import java.io.IOException;
 
-public class agregarCompletoController {
+public class eliminarCompletoController {
 
     @FXML
-    private TextField apellidoTxt;
+    private TextField IdEliminarTxt;
 
     @FXML
-    private TextField areaTxt;
-
-    @FXML
-    private TextField emailTxt;
-
-    @FXML
-    private Button guardarButton;
-
-    @FXML
-    private TextField horasTxt;
-
-    @FXML
-    private TextField idTxt;
-
-    @FXML
-    private TextField nombreTxt;
+    private Button eliminarButton;
 
     @FXML
     private Button salirButton;
 
     @FXML
-    void OnClickedguardarButton(MouseEvent event) {
+    void OnClickedeliminarButton(MouseEvent event) {
 
     }
 
     @FXML
     void OnClickedsalirButton(MouseEvent event) throws IOException {
         HelloApplication escena = new HelloApplication();
-        escena.changeScene("completoMenu-view.fxml");
+        escena.changeScene("eliminarCompleto-view.fxml");
     }
 
 }
