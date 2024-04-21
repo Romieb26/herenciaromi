@@ -8,4 +8,12 @@ public class Parcial extends Empleado{
             super(nombre, apellido, area, email, id);
             this.horas = horas;
         }
+
+    public double getHoras() {
+        return horas;
+    }
+
+    public void setHoras(double horas) {
+        this.horas = horas;
+    }
 }

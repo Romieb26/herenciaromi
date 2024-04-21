@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #3CFFD9;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vichito.herencias.Controllers.agregarCompletoController">
    <children>
       <Pane layoutX="144.0" prefHeight="404.0" prefWidth="312.0" style="-fx-background-color: black;">
@@ -47,7 +46,7 @@
                   <Font size="15.0" />
                </font>
             </Label>
-            <Label layoutX="99.0" layoutY="297.0" text="Horas a trabajar" textFill="WHITE">
+            <Label layoutX="127.0" layoutY="297.0" text="Sueldo" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
@@ -57,7 +56,7 @@
             <TextField fx:id="emailTxt" layoutX="78.0" layoutY="179.0" promptText="Email" />
             <TextField fx:id="areaTxt" layoutX="78.0" layoutY="223.0" promptText="Area" />
             <TextField fx:id="idTxt" layoutX="76.0" layoutY="269.0" promptText="ID" />
-            <TextField fx:id="horasTxt" layoutX="76.0" layoutY="318.0" promptText="Horas" />
+            <TextField fx:id="sueldoTxt" layoutX="76.0" layoutY="318.0" promptText="Sueldo" />
          </children>
       </Pane>
       <Button fx:id="salirButton" layoutX="534.0" layoutY="365.0" mnemonicParsing="false" onMouseClicked="#OnClickedsalirButton" style="-fx-background-color: white;" text="Salir">

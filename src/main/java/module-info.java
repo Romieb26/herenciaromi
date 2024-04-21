@@ -2,6 +2,7 @@ module com.vichito.herencias {
     requires javafx.controls;
     requires javafx.fxml;
 
+    opens com.vichito.herencias.Models to javafx.base;
 
     opens com.vichito.herencias to javafx.fxml;
     exports com.vichito.herencias;

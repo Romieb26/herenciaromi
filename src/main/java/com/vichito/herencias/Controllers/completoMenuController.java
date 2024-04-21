@@ -51,7 +51,7 @@ public class completoMenuController {
     @FXML
     void OnClickedverTableButton(MouseEvent event) throws IOException{
         HelloApplication escena = new HelloApplication();
-        escena.changeScene("");
+        escena.changeScene("verCompleto-view.fxml");
     }
 
 }
