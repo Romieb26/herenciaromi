@@ -33,19 +33,19 @@ public class completoMenuController {
     @FXML
     void OnClickedagregarButton(MouseEvent event) throws IOException {
         HelloApplication escena = new HelloApplication();
-        escena.changeScene("");
+        escena.changeScene("agregarCompleto-view.fxml");
     }
 
     @FXML
     void OnClickedbuscarButton(MouseEvent event) throws IOException {
         HelloApplication escena = new HelloApplication();
-        escena.changeScene("");
+        escena.changeScene("buscarCompleto-view.fxml");
     }
 
     @FXML
     void OnClickedeliminarButton(MouseEvent event) throws IOException {
         HelloApplication escena = new HelloApplication();
-        escena.changeScene("");
+        escena.changeScene("eliminarCompleto-view.fxml");
     }
 
     @FXML

@@ -33,19 +33,19 @@ public class parcialMenuController {
     @FXML
     void OnClickedagregarButton(MouseEvent event) throws IOException {
         HelloApplication escena = new HelloApplication();
-        escena.changeScene("");
+        escena.changeScene("agregarParcial-view.fxml");
     }
 
     @FXML
     void OnClickedbuscarButton(MouseEvent event) throws IOException {
         HelloApplication escena = new HelloApplication();
-        escena.changeScene("");
+        escena.changeScene("buscarParcial-view.fxml");
     }
 
     @FXML
     void OnClickedeliminarButton(MouseEvent event) throws IOException {
         HelloApplication escena = new HelloApplication();
-        escena.changeScene("");
+        escena.changeScene("eliminarParcial-view.fxml");
     }
 
     @FXML

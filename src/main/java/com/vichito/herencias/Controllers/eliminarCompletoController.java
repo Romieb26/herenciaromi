@@ -27,7 +27,7 @@ public class eliminarCompletoController {
     @FXML
     void OnClickedsalirButton(MouseEvent event) throws IOException {
         HelloApplication escena = new HelloApplication();
-        escena.changeScene("eliminarCompleto-view.fxml");
+        escena.changeScene("completoMenu-view.fxml");
     }
 
 }
