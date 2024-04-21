@@ -44,15 +44,20 @@ public class buscarCompletoController {
         }else {
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Búsqueda Fallida");
-            alert.setContentText("No se encontró el equipo.  :C");
+            alert.setContentText("No se encontró el Empleado De tiempo Completo.  :C");
             alert.showAndWait();
     }
+        limpiar();
     }
 
     @FXML
     void OnClickedsalirButton(MouseEvent event) throws IOException {
         HelloApplication escena = new HelloApplication();
         escena.changeScene("completoMenu-view.fxml");
+    }
+
+    public void limpiar(){
+        IdBuscarTxt.clear();
     }
 
 }

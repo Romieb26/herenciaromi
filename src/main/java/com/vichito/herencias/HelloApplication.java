@@ -1,6 +1,8 @@
 package com.vichito.herencias;
+import com.vichito.herencias.Models.BaseDatos;
 import com.vichito.herencias.Models.Completo;
 import com.vichito.herencias.Models.Empresa;
+import com.vichito.herencias.Models.Parcial;
 import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -41,7 +43,14 @@ public class HelloApplication extends Application {
     private static ObservableList<Completo> completoComs = FXCollections.observableArrayList();
     public static ObservableList<Completo> getCompletoComs(){ return completoComs; }
 
+    //Empleado Parcial
 
+    private static BaseDatos baseDato = new BaseDatos();
+    private static ObservableList<BaseDatos> baseDatos = FXCollections.observableArrayList();
+    public static BaseDatos getBaseDato(){ return baseDato; }
+    private static ObservableList<BaseDatos> getBaseDatos(){ return baseDatos; }
+    private static ObservableList<Parcial> parcialComs = FXCollections.observableArrayList();
+    public static ObservableList<Parcial> getParcialComs(){ return parcialComs; }
 
 
     public static void main(String[] args) {

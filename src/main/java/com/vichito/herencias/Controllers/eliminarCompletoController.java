@@ -47,12 +47,18 @@ public class eliminarCompletoController {
             alert.setContentText("No se encontro ningun empleado con ese ID");
             alert.showAndWait();
         }
+        limpiar();
+
     }
 
     @FXML
     void OnClickedsalirButton(MouseEvent event) throws IOException {
         HelloApplication escena = new HelloApplication();
         escena.changeScene("completoMenu-view.fxml");
+    }
+
+    public void limpiar(){
+        IdEliminarTxt.clear();
     }
 
 }

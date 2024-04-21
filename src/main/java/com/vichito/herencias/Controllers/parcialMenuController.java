@@ -51,7 +51,7 @@ public class parcialMenuController {
     @FXML
     void OnClickedverTableButton(MouseEvent event) throws IOException {
         HelloApplication escena = new HelloApplication();
-        escena.changeScene("");
+        escena.changeScene("verParcial-view.fxml");
     }
 
 }
