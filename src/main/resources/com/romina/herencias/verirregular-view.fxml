@@ -22,13 +22,14 @@
                   <Font size="20.0" />
                </font>
             </Label>
-            <TableView fx:id="empleadoTablaTable" layoutY="119.0" prefHeight="200.0" prefWidth="415.0">
+            <TableView fx:id="alumnosRegularesTablaTable" layoutY="119.0" prefHeight="200.0" prefWidth="415.0">
                <columns>
                   <TableColumn fx:id="nombreColumna" prefWidth="75.0" text="Nombre" />
                   <TableColumn fx:id="apellidoColumna" prefWidth="75.0" text="Apellido" />
-                  <TableColumn fx:id="areaColumna" prefWidth="75.0" text="edad" />
-                  <TableColumn fx:id="emailColumna" prefWidth="75.0" text="grado" />
-                  <TableColumn fx:id="idColumna" prefWidth="112.33331298828125" text="maestro" />
+                  <TableColumn fx:id="edadColumna" prefWidth="51.33331298828125" text="edad" />
+                  <TableColumn fx:id="gradoColumna" prefWidth="54.6666259765625" text="grado" />
+                  <TableColumn fx:id="matriculaColumna" prefWidth="84.6666259765625" text="matricula" />
+                  <TableColumn fx:id="reprobadasColumna" prefWidth="72.66668701171875" text="reprobadas" />
                </columns>
             </TableView>
             <Button fx:id="salirButton" layoutX="148.0" layoutY="339.0" mnemonicParsing="false" onMouseClicked="#OnClickedsalirButton" style="-fx-background-color: white;" text="Volver al menu">

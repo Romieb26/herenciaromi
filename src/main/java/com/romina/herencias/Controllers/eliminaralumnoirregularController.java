@@ -25,14 +25,13 @@ public class eliminaralumnoirregularController {
 
     @FXML
     void OnClickedeliminarButton(MouseEvent event) {
-        int id = Integer.parseInt(gradoEliminarTxt.getText());
+        int matricula = Integer.parseInt(gradoEliminarTxt.getText());
 
         ObservableList<Irregular> listaIrregular = HelloApplication.getParcialComs();
 
         Irregular irregularEliminar = null;
         for(Irregular irregular : listaIrregular) {
-            String grado = null;
-            if(irregular.getGrado() == grado) {
+            if(irregular.getMatricula() == matricula) {
                 irregularEliminar = irregular;
                 break;
             }

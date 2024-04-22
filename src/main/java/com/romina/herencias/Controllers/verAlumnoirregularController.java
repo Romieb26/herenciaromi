@@ -17,24 +17,25 @@ import java.util.ResourceBundle;
 public class verAlumnoirregularController implements Initializable {
 
     @FXML
+    private TableView<Irregular> alumnosRegularesTablaTable;
+
+    @FXML
     private TableColumn<Irregular, String> apellidoColumna;
 
     @FXML
-    private TableColumn<Irregular, String> areaColumna;
+    private TableColumn<Irregular, Integer> edadColumna;
 
     @FXML
-    private TableColumn<Irregular, String> emailColumna;
+    private TableColumn<Irregular, Integer> gradoColumna;
 
     @FXML
-    private TableView<Irregular> empleadoTablaTable;
-
-    @FXML
-    private TableColumn<Irregular, Integer> idColumna;
+    private TableColumn<Irregular, Integer> matriculaColumna;
 
     @FXML
     private TableColumn<Irregular, String> nombreColumna;
 
-
+    @FXML
+    private TableColumn<Irregular, Integer> reprobadasColumna;
     @FXML
     private Button salirButton;
 
@@ -42,12 +43,13 @@ public class verAlumnoirregularController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
         this.apellidoColumna.setCellValueFactory(new PropertyValueFactory<>("apellido"));
-        this.areaColumna.setCellValueFactory(new PropertyValueFactory<>("area"));
-        this.emailColumna.setCellValueFactory(new PropertyValueFactory<>("email"));
-        this.idColumna.setCellValueFactory(new PropertyValueFactory<>("id"));
+        this.gradoColumna.setCellValueFactory(new PropertyValueFactory<>("grado"));
+        this.matriculaColumna.setCellValueFactory(new PropertyValueFactory<>("matricula"));
+        this.edadColumna.setCellValueFactory(new PropertyValueFactory<>("edad"));
         this.nombreColumna.setCellValueFactory(new PropertyValueFactory<>("nombre"));
+        this.reprobadasColumna.setCellValueFactory(new PropertyValueFactory<>("reprobadas"));
 
-        this.empleadoTablaTable.setItems(HelloApplication.getParcialComs());
+        this.alumnosRegularesTablaTable.setItems(HelloApplication.getParcialComs());
 
     }
 

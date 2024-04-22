@@ -25,11 +25,13 @@ public class agregaralumnoirregularController {
     private Button guardarButton;
 
     @FXML
-    private TextField maestroTxt;
+    private TextField matriculaTxt;
 
     @FXML
     private TextField nombreTxt;
 
+    @FXML
+    private TextField reprobadasTxt;
 
     @FXML
     private Button salirButton;
@@ -38,18 +40,19 @@ public class agregaralumnoirregularController {
     void OnClickedguardarButton(MouseEvent event) {
         String nombre = nombreTxt.getText();
         String apellido = apellidoTxt.getText();
-        String edad = edadTxt.getText();
-        String maestro = maestroTxt.getText();
+        int edad = Integer.parseInt(edadTxt.getText());
+        int matricula = Integer.parseInt(matriculaTxt.getText());
         int grado = Integer.parseInt(gradoTxt.getText());
+        int reprobadas = Integer.parseInt(reprobadasTxt.getText());
 
 
-        Irregular irregular = new Irregular(nombre,apellido,edad,grado,maestro);
+        Irregular irregular = new Irregular(nombre, apellido, edad, grado, matricula,reprobadas);
 
-        if (!HelloApplication.getParcialComs().contains(irregular)){
+        if (!HelloApplication.getParcialComs().contains(irregular)) {
             HelloApplication.getParcialComs().add(irregular);
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Hecho");
-            alert.setContentText("Agregado con exito" + System.lineSeparator() + " Nombre del empleado :" + nombre + System.lineSeparator() + "Apellido del alimno :" + apellido + System.lineSeparator() + "Area del edad : "+ edad + System.lineSeparator() + "grado del alumno:" + grado + System.lineSeparator() + "maestro del alumno :"+ maestro );
+            alert.setContentText("Agregado con exito" + System.lineSeparator() + " Nombre del empleado :" + nombre + System.lineSeparator() + "Apellido del alimno :" + apellido + System.lineSeparator() + "Area del edad : " + edad + System.lineSeparator() + "grado del alumno:" + grado + System.lineSeparator() + "matricula del alumno :" + matricula);
             alert.showAndWait();
             System.out.println("Se agrego correctamente: " + nombre);
         }
@@ -62,12 +65,12 @@ public class agregaralumnoirregularController {
         escena.changeScene("irregularMenu-view.fxml");
     }
 
-    public void limpiar(){
+    public void limpiar() {
         nombreTxt.clear();
         apellidoTxt.clear();
         edadTxt.clear();
         gradoTxt.clear();
-        maestroTxt.clear();
+        matriculaTxt.clear();
 
     }
 

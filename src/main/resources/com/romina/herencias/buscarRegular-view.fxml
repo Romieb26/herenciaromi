@@ -21,12 +21,12 @@
                   <Font size="22.0" />
                </font>
             </Label>
-            <Label layoutX="94.0" layoutY="112.0" text="ingrese Alumno" textFill="WHITE">
+            <Label layoutX="32.0" layoutY="115.0" text="Ingrese la matricula del alumno" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <TextField fx:id="gradoBuscarTxt" layoutX="82.0" layoutY="150.0" promptText="grado" />
+            <TextField fx:id="matriculaBuscarTxt" layoutX="82.0" layoutY="150.0" promptText="matricula" />
          </children>
       </Pane>
       <Button fx:id="salirButton" layoutX="528.0" layoutY="358.0" mnemonicParsing="false" onMouseClicked="#OnClickedsalirButton" style="-fx-background-color: white;" text="Salir">

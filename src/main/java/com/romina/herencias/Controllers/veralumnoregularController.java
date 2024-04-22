@@ -16,29 +16,30 @@ import java.util.ResourceBundle;
 
 public class veralumnoregularController implements Initializable {
 
+
+    @FXML
+    private TableView<Alumnoregular> alumnosAprobadosTablaTable;
+
     @FXML
     private TableColumn<Alumnoregular, String> apellidoColumna;
 
     @FXML
-    private TableColumn<Alumnoregular, String> areaColumna;
+    private TableColumn<Alumnoregular, Integer> aprobadasColumna;
 
     @FXML
-    private TableColumn<Alumnoregular, String> emailColumna;
+    private TableColumn<Alumnoregular, Integer> edadColumna;
 
     @FXML
-    private TableView<Alumnoregular> empleadoTablaTable;
+    private TableColumn<Alumnoregular, Integer> gradoColumna;
 
     @FXML
-    private TableColumn<Alumnoregular, Integer> idColumna;
+    private TableColumn<Alumnoregular, Integer> matriculaColumna;
 
     @FXML
     private TableColumn<Alumnoregular, String> nombreColumna;
 
     @FXML
     private Button salirButton;
-
-    @FXML
-    private TableColumn<Alumnoregular, Integer> sueldoColumna;
 
     @FXML
     void OnClickedsalirButton(MouseEvent event) throws IOException {
@@ -51,12 +52,12 @@ public class veralumnoregularController implements Initializable {
 
         this.nombreColumna.setCellValueFactory(new PropertyValueFactory<>("nombre"));
         this.apellidoColumna.setCellValueFactory(new PropertyValueFactory<>("apellido"));
-        this.areaColumna.setCellValueFactory(new PropertyValueFactory<>("area"));
-        this.emailColumna.setCellValueFactory(new PropertyValueFactory<>("email"));
-        this.idColumna.setCellValueFactory(new PropertyValueFactory<>("id"));
-        this.sueldoColumna.setCellValueFactory(new PropertyValueFactory<>("sueldo"));
+        this.matriculaColumna.setCellValueFactory(new PropertyValueFactory<>("matricula"));
+        this.edadColumna.setCellValueFactory(new PropertyValueFactory<>("edad"));
+        this.aprobadasColumna.setCellValueFactory(new PropertyValueFactory<>("aprobadas"));
+        this.gradoColumna.setCellValueFactory(new PropertyValueFactory<>("grado"));
 
-        this.empleadoTablaTable.setItems(HelloApplication.getCompletoComs());
+        this.alumnosAprobadosTablaTable.setItems(HelloApplication.getCompletoComs());
 
     }
 }

@@ -14,24 +14,23 @@ import java.io.IOException;
 public class buscaralumnoregularController {
 
     @FXML
-    private TextField gradoBuscarTxt;
+    private Button buscarButton;
 
     @FXML
-    private Button buscarButton;
+    private TextField matriculaBuscarTxt;
 
     @FXML
     private Button salirButton;
 
     @FXML
     void OnClickedbuscarButton(MouseEvent event) {
-        int id = Integer.parseInt(gradoBuscarTxt.getText());
+        int matricula = Integer.parseInt(matriculaBuscarTxt.getText());
 
         ObservableList<Alumnoregular> lista = HelloApplication.getCompletoComs();
 
         Alumnoregular alumnoregularEncontrado = null;
         for (Alumnoregular alumnoregular : lista) {
-            String grado = null;
-            if (alumnoregular.getGrado() == grado) {
+            if (alumnoregular.getMatricula() == matricula) {
                 alumnoregularEncontrado = alumnoregular;
                 break;
             }
@@ -58,7 +57,7 @@ public class buscaralumnoregularController {
     }
 
     public void limpiar(){
-        gradoBuscarTxt.clear();
+        matriculaBuscarTxt.clear();
     }
 
 }

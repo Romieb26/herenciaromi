@@ -4,9 +4,9 @@ public class Alumnoregular extends Maestro {
 
     private int aprobadas;
 
-    public Alumnoregular(String nombre, String apellido , int edad, int grado , int matricula) {
+    public Alumnoregular(String nombre, String apellido , int edad, int grado , int matricula, int aprobadas) {
         super(nombre,apellido,edad,grado,matricula);
-        this.aprobadas = aprobadas;
+        this.aprobadas = this.aprobadas;
     }
 
     public int getAprobadas() {

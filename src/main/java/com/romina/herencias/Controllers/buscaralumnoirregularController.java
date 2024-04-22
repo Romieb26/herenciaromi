@@ -24,14 +24,13 @@ public class buscaralumnoirregularController {
 
     @FXML
     void OnClickedbuscarButton(MouseEvent event) {
-        int id = Integer.parseInt(gradoBuscarTxt.getText());
+        int matricula = Integer.parseInt(gradoBuscarTxt.getText());
 
         ObservableList<Irregular> lista = HelloApplication.getParcialComs();
 
         Irregular irregularEncontrado = null;
         for (Irregular irregular : lista) {
-            String grado = null;
-            if (irregular.getGrado() == grado) {
+            if (irregular.getMatricula() == matricula) {
                 irregularEncontrado = irregular;
                 break;
             }

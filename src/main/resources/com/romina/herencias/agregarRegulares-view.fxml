@@ -41,7 +41,7 @@
                   <Font size="15.0" />
                </font>
             </Label>
-            <Label layoutX="82.0" layoutY="278.0" text="Maestro" textFill="WHITE">
+            <Label layoutX="82.0" layoutY="271.0" text="Matricula" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
@@ -50,12 +50,18 @@
             <TextField fx:id="apellidoTxt" layoutX="165.0" layoutY="125.0" promptText="apellido" />
             <TextField fx:id="edadTxt" layoutX="165.0" layoutY="179.0" promptText="edad" />
             <TextField fx:id="gradoTxt" layoutX="165.0" layoutY="223.0" promptText="grado" />
-            <TextField fx:id="maestroTxt" layoutX="165.0" layoutY="276.0" promptText="maestro" />
+            <TextField fx:id="matriculaTxt" layoutX="165.0" layoutY="269.0" promptText="matricula" />
             <Label layoutX="82.0" layoutY="72.0" text="Nombre" textFill="#f8f4f4">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
+            <Label layoutX="24.0" layoutY="317.0" text="Materias aprobadas" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="aprobadasTxt" layoutX="165.0" layoutY="315.0" promptText="aprobadas" />
          </children>
       </Pane>
       <Button fx:id="salirButton" layoutX="534.0" layoutY="365.0" mnemonicParsing="false" onMouseClicked="#OnClickedsalirButton" style="-fx-background-color: white;" text="Salir">

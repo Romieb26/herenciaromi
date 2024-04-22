@@ -22,14 +22,14 @@
                   <Font size="20.0" />
                </font>
             </Label>
-            <TableView fx:id="empleadoTablaTable" layoutY="114.0" prefHeight="200.0" prefWidth="421.0">
+            <TableView fx:id="alumnosAprobadosTablaTable" layoutY="114.0" prefHeight="200.0" prefWidth="421.0">
               <columns>
                 <TableColumn fx:id="nombreColumna" prefWidth="75.0" text="Nombre" />
                 <TableColumn fx:id="apellidoColumna" prefWidth="75.0" text="Apellido" />
-                  <TableColumn fx:id="areaColumna" prefWidth="75.0" text="edad" />
-                  <TableColumn fx:id="emailColumna" prefWidth="75.0" text="grado" />
-                  <TableColumn fx:id="idColumna" prefWidth="122.0" text="maestro" />
-                  <TableColumn fx:id="sueldoColumna" minWidth="1.33331298828125" prefWidth="2.6666259765625" />
+                  <TableColumn fx:id="edadColumna" prefWidth="47.33331298828125" text="edad" />
+                  <TableColumn fx:id="gradoColumna" prefWidth="67.33331298828125" text="grado" />
+                  <TableColumn fx:id="matriculaColumna" prefWidth="84.0" text="matricula" />
+                  <TableColumn fx:id="aprobadasColumna" prefWidth="75.0" text="aprobadas" />
               </columns>
             </TableView>
             <Button fx:id="salirButton" layoutX="150.0" layoutY="348.0" mnemonicParsing="false" onMouseClicked="#OnClickedsalirButton" style="-fx-background-color: white;" text="Volver al menu">

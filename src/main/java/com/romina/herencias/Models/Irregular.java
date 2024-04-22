@@ -4,7 +4,7 @@ public class Irregular extends Maestro {
 
         private int reprobadas;
 
-        public Irregular(String nombre, String apellido , int edad,int grado, int matricula){
+        public Irregular(String nombre, String apellido , int reprobadas, int edad, int grado, int matricula){
             super(nombre, apellido, edad,grado , matricula);
             this.reprobadas =reprobadas;
         }
