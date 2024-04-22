@@ -14,18 +14,19 @@ import java.io.IOException;
 public class eliminaralumnoirregularController {
 
 
-    @FXML
-    private TextField gradoEliminarTxt;
 
     @FXML
     private Button eliminarButton;
+
+    @FXML
+    private TextField matriculaEliminarTxt;
 
     @FXML
     private Button salirButton;
 
     @FXML
     void OnClickedeliminarButton(MouseEvent event) {
-        int matricula = Integer.parseInt(gradoEliminarTxt.getText());
+        int matricula = Integer.parseInt(matriculaEliminarTxt.getText());
 
         ObservableList<Irregular> listaIrregular = HelloApplication.getParcialComs();
 
@@ -58,7 +59,7 @@ public class eliminaralumnoirregularController {
     }
 
     public void limpiar(){
-        gradoEliminarTxt.clear();
+        matriculaEliminarTxt.clear();
     }
 
 }

@@ -74,6 +74,5 @@ public class agregaralumnoregularController {
         gradoTxt.clear();
         matriculaTxt.clear();
         aprobadasTxt.clear();
-
     }
 }

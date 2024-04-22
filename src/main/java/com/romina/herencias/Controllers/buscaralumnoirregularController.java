@@ -17,14 +17,14 @@ public class buscaralumnoirregularController {
     private Button buscarButton;
 
     @FXML
-    private TextField gradoBuscarTxt;
+    private TextField matriculaBuscarTxt;
 
     @FXML
     private Button salirButton;
 
     @FXML
     void OnClickedbuscarButton(MouseEvent event) {
-        int matricula = Integer.parseInt(gradoBuscarTxt.getText());
+        int matricula = Integer.parseInt(matriculaBuscarTxt.getText());
 
         ObservableList<Irregular> lista = HelloApplication.getParcialComs();
 
@@ -58,6 +58,6 @@ public class buscaralumnoirregularController {
 
 
     public void limpiar(){
-        gradoBuscarTxt.clear();
+        matriculaBuscarTxt.clear();
     }
 }

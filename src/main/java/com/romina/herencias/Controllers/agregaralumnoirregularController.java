@@ -71,6 +71,7 @@ public class agregaralumnoirregularController {
         edadTxt.clear();
         gradoTxt.clear();
         matriculaTxt.clear();
+        reprobadasTxt.clear();
 
     }
 
