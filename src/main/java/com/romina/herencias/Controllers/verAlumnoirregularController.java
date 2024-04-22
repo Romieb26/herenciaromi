@@ -17,22 +17,22 @@ import java.util.ResourceBundle;
 public class verAlumnoirregularController implements Initializable {
 
     @FXML
-    private TableColumn<?, ?> apellidoColumna;
+    private TableColumn<Irregular, String> apellidoColumna;
 
     @FXML
-    private TableColumn<?, ?> areaColumna;
+    private TableColumn<Irregular, String> areaColumna;
 
     @FXML
-    private TableColumn<?, ?> emailColumna;
+    private TableColumn<Irregular, String> emailColumna;
 
     @FXML
     private TableView<Irregular> empleadoTablaTable;
 
     @FXML
-    private TableColumn<?, ?> idColumna;
+    private TableColumn<Irregular, Integer> idColumna;
 
     @FXML
-    private TableColumn<?, ?> nombreColumna;
+    private TableColumn<Irregular, String> nombreColumna;
 
 
     @FXML

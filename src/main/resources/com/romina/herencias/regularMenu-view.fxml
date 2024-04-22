@@ -12,32 +12,32 @@
             <Font size="35.0" />
          </font>
       </Label>
-      <Label layoutX="258.0" layoutY="88.0" text="Alumno">
+      <Label layoutX="216.0" layoutY="79.0" text="Alumno regular">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
-      <Button fx:id="SalirButton" layoutX="526.0" layoutY="361.0" mnemonicParsing="false" onMouseClicked="#OnClickedSalirButton" style="-fx-background-color: white;" text="Salir">
+      <Button fx:id="SalirButton" layoutX="277.0" layoutY="353.0" mnemonicParsing="false" onMouseClicked="#OnClickedSalirButton" style="-fx-background-color: white;" text="Salir">
          <font>
             <Font size="15.0" />
          </font>
       </Button>
-      <Button fx:id="agregarButton" layoutX="229.0" layoutY="141.0" mnemonicParsing="false" onMouseClicked="#OnClickedagregarButton" prefHeight="44.0" prefWidth="145.0" style="-fx-background-color: white;" text="Agregar">
+      <Button fx:id="agregarButton" layoutX="95.0" layoutY="129.0" mnemonicParsing="false" onMouseClicked="#OnClickedagregarButton" prefHeight="109.0" prefWidth="145.0" style="-fx-background-color: white;" text="Agregar">
          <font>
             <Font size="20.0" />
          </font>
       </Button>
-      <Button fx:id="buscarButton" layoutX="229.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#OnClickedbuscarButton" prefHeight="44.0" prefWidth="145.0" style="-fx-background-color: white;" text="Buscar">
+      <Button fx:id="buscarButton" layoutX="375.0" layoutY="129.0" mnemonicParsing="false" onMouseClicked="#OnClickedbuscarButton" prefHeight="109.0" prefWidth="145.0" style="-fx-background-color: white;" text="Buscar">
          <font>
             <Font size="20.0" />
          </font>
       </Button>
-      <Button fx:id="eliminarButton" layoutX="229.0" layoutY="257.0" mnemonicParsing="false" onMouseClicked="#OnClickedeliminarButton" prefHeight="44.0" prefWidth="145.0" style="-fx-background-color: white;" text="Eliminar">
+      <Button fx:id="eliminarButton" layoutX="95.0" layoutY="260.0" mnemonicParsing="false" onMouseClicked="#OnClickedeliminarButton" prefHeight="109.0" prefWidth="145.0" style="-fx-background-color: white;" text="Eliminar">
          <font>
             <Font size="20.0" />
          </font>
       </Button>
-      <Button fx:id="verTablaButton" layoutX="229.0" layoutY="317.0" mnemonicParsing="false" onMouseClicked="#OnClickedverTableButton" prefHeight="44.0" prefWidth="145.0" style="-fx-background-color: white;" text="Ver Tabla">
+      <Button fx:id="verTablaButton" layoutX="375.0" layoutY="260.0" mnemonicParsing="false" onMouseClicked="#OnClickedverTableButton" prefHeight="109.0" prefWidth="145.0" style="-fx-background-color: white;" text="Ver Tabla">
          <font>
             <Font size="20.0" />
          </font>

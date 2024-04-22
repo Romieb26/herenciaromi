@@ -2,18 +2,18 @@ package com.romina.herencias.Models;
 
 public class Alumnoregular extends Maestro {
 
-    private double sueldo;
+    private int aprobadas;
 
-    public Alumnoregular(String nombre, String apellido , String edad, String grado, int maestro) {
-        super(nombre,apellido,edad,grado,maestro);
-        this.sueldo = sueldo;
+    public Alumnoregular(String nombre, String apellido , int edad, int grado , int matricula) {
+        super(nombre,apellido,edad,grado,matricula);
+        this.aprobadas = aprobadas;
     }
 
-    public double getSueldo() {
-        return sueldo;
+    public int getAprobadas() {
+        return aprobadas;
     }
 
-    public void setSueldo(double sueldo) {
-        this.sueldo = sueldo;
+    public void setAprobadas(int reprobadas) {
+        this.aprobadas = aprobadas;
     }
 }

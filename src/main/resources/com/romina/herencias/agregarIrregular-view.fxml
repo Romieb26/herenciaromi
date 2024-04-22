@@ -9,48 +9,48 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #9abcef;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.romina.herencias.Controllers.agregaralumnoirregularController">
    <children>
-      <Pane layoutX="144.0" prefHeight="400.0" prefWidth="312.0" style="-fx-background-color: #c3a7f6;">
+      <Pane layoutX="98.0" prefHeight="400.0" prefWidth="403.0" style="-fx-background-color: #c3a7f6;">
          <children>
-            <Button fx:id="guardarButton" layoutX="119.0" layoutY="355.0" mnemonicParsing="false" onMouseClicked="#OnClickedguardarButton" style="-fx-background-color: white;" text="Guardar">
+            <Button fx:id="guardarButton" layoutX="160.0" layoutY="348.0" mnemonicParsing="false" onMouseClicked="#OnClickedguardarButton" style="-fx-background-color: white;" text="Guardar">
                <font>
                   <Font size="15.0" />
                </font>
             </Button>
-            <Label layoutX="47.0" layoutY="14.0" text="Agregar un Alumno " textFill="WHITE">
+            <Label layoutX="98.0" layoutY="14.0" text="Agregar un Alumno " textFill="WHITE">
                <font>
                   <Font size="22.0" />
                </font>
             </Label>
-            <Label layoutX="129.0" layoutY="57.0" text="Nombre" textFill="WHITE">
+            <Label layoutX="82.0" layoutY="80.0" text="Nombre" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <Label layoutX="129.0" layoutY="102.0" text="Apellido" textFill="WHITE">
+            <Label layoutX="82.0" layoutY="125.0" text="Apellido" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <Label layoutX="138.0" layoutY="156.0" text="Edad" textFill="WHITE">
+            <Label layoutX="93.0" layoutY="179.0" text="Edad" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <Label layoutX="143.0" layoutY="200.0" text="Grado" textFill="WHITE">
+            <Label layoutX="89.0" layoutY="223.0" text="Grado" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <Label layoutX="130.0" layoutY="246.0" text="Maestro" textFill="WHITE">
+            <Label layoutX="82.0" layoutY="269.0" text="Maestro" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <TextField fx:id="nombreTxt" layoutX="84.0" layoutY="78.0" promptText="nombre" />
-            <TextField fx:id="apellidoTxt" layoutX="84.0" layoutY="123.0" promptText="apellido" />
-            <TextField fx:id="edadTxt" layoutX="84.0" layoutY="177.0" promptText="Edad" />
-            <TextField fx:id="gradoTxt" layoutX="84.0" layoutY="221.0" promptText="Grado" />
-            <TextField fx:id="maestroTxt" layoutX="82.0" layoutY="267.0" promptText="Maestro" />
+            <TextField fx:id="nombreTxt" layoutX="197.0" layoutY="78.0" promptText="nombre" />
+            <TextField fx:id="apellidoTxt" layoutX="197.0" layoutY="123.0" promptText="apellido" />
+            <TextField fx:id="edadTxt" layoutX="197.0" layoutY="177.0" promptText="Edad" />
+            <TextField fx:id="gradoTxt" layoutX="197.0" layoutY="221.0" promptText="Grado" />
+            <TextField fx:id="maestroTxt" layoutX="197.0" layoutY="267.0" promptText="Maestro" />
          </children>
       </Pane>
       <Button fx:id="salirButton" layoutX="534.0" layoutY="361.0" mnemonicParsing="false" onMouseClicked="#OnClickedsalirButton" style="-fx-background-color: white;" text="Salir">

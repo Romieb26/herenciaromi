@@ -2,22 +2,22 @@ package com.romina.herencias.Models;
 
 public class Irregular extends Maestro {
 
-        private double irregular;
+        private int reprobadas;
 
-        public Irregular(String nombre, String apellido , String area, String email, int id, double horas){
-            super(nombre, apellido, area, email, id);
-            this.irregular = horas;
+        public Irregular(String nombre, String apellido , int edad,int grado, int matricula){
+            super(nombre, apellido, edad,grado , matricula);
+            this.reprobadas =reprobadas;
         }
 
     public Irregular(String nombre, String apellido, String edad, int grado, String maestro) {
         super();
     }
 
-    public double getHoras() {
-        return irregular;
+    public int getReprobadas() {
+        return reprobadas;
     }
 
-    public void setIrregular(double irregular) {
-        this.irregular = irregular;
+    public void setReprobadas(int reprobadas) {
+        this.reprobadas = reprobadas;
     }
 }
