@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #96d6ea;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.romina.herencias.Controllers.buscaralumnoregularController">
+   <children>
+      <Pane layoutX="143.0" prefHeight="403.0" prefWidth="314.0" style="-fx-background-color: #c3a7f6;">
+         <children>
+            <Button fx:id="buscarButton" layoutX="125.0" layoutY="341.0" mnemonicParsing="false" onMouseClicked="#OnClickedbuscarButton" style="-fx-background-color: white;" text="Buscar">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="73.0" layoutY="36.0" text="Buscar alumno" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="94.0" layoutY="112.0" text="ingrese Alumno" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="gradoBuscarTxt" layoutX="82.0" layoutY="150.0" promptText="grado" />
+         </children>
+      </Pane>
+      <Button fx:id="salirButton" layoutX="528.0" layoutY="358.0" mnemonicParsing="false" onMouseClicked="#OnClickedsalirButton" style="-fx-background-color: white;" text="Salir">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

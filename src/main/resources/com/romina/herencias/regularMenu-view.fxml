@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #a4dff1;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.romina.herencias.Controllers.alumnoregularMenuController">
+   <children>
+      <Label layoutX="251.0" layoutY="28.0" text="Menu ">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="258.0" layoutY="88.0" text="Alumno">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="SalirButton" layoutX="526.0" layoutY="361.0" mnemonicParsing="false" onMouseClicked="#OnClickedSalirButton" style="-fx-background-color: white;" text="Salir">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="agregarButton" layoutX="229.0" layoutY="141.0" mnemonicParsing="false" onMouseClicked="#OnClickedagregarButton" prefHeight="44.0" prefWidth="145.0" style="-fx-background-color: white;" text="Agregar">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="buscarButton" layoutX="229.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#OnClickedbuscarButton" prefHeight="44.0" prefWidth="145.0" style="-fx-background-color: white;" text="Buscar">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="eliminarButton" layoutX="229.0" layoutY="257.0" mnemonicParsing="false" onMouseClicked="#OnClickedeliminarButton" prefHeight="44.0" prefWidth="145.0" style="-fx-background-color: white;" text="Eliminar">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="verTablaButton" layoutX="229.0" layoutY="317.0" mnemonicParsing="false" onMouseClicked="#OnClickedverTableButton" prefHeight="44.0" prefWidth="145.0" style="-fx-background-color: white;" text="Ver Tabla">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

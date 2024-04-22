@@ -1,11 +1,11 @@
-module com.vichito.herencias {
+module com.romina.herencias {
     requires javafx.controls;
     requires javafx.fxml;
 
-    opens com.vichito.herencias.Models to javafx.base;
+    opens com.romina.herencias.Models to javafx.base;
 
-    opens com.vichito.herencias to javafx.fxml;
-    exports com.vichito.herencias;
-    exports com.vichito.herencias.Controllers;
-    opens com.vichito.herencias.Controllers to javafx.fxml;
+    opens com.romina.herencias to javafx.fxml;
+    exports com.romina.herencias;
+    exports com.romina.herencias.Controllers;
+    opens com.romina.herencias.Controllers to javafx.fxml;
 }
